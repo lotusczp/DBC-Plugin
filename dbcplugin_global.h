@@ -1,0 +1,12 @@
+#ifndef DBCPLUGIN_GLOBAL_H
+#define DBCPLUGIN_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DBCPLUGIN_LIBRARY)
+#  define DBCPLUGINSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define DBCPLUGINSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DBCPLUGIN_GLOBAL_H
